@@ -2,17 +2,27 @@
 
 https://packaging.python.org/en/latest/tutorials/packaging-projects/
 
-```
-# Generating distribution archives
+```bash
+# build dist
 py -m build
 ```
 
-```
-# Upload to testpypi
+```bash
+# upload to testpypi
 py -m twine upload --repository testpypi dist/*
 ```
 
-```
-# Upload to pypi
+```bash
+# upload to pypi
 py -m twine upload --repository pypi dist/*
+```
+
+```bash
+# install dev requirements
+pip install -r .\requirements-dev.txt
+```
+
+```bash
+# run pytest
+pytest
 ```
